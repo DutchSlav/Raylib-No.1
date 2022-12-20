@@ -1,4 +1,4 @@
-# Some JayLib testing ig
+# Some JayLib testing ig DISCONTINUED: `https://github.com/DutchSlav/.NET-Raylib` is the new version.
 
 Note:
 
