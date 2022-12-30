@@ -18,6 +18,9 @@ public class Main {
         Raylib.Camera2D camera = new Raylib.Camera2D();
         camera.zoom(2.0f);
 
+        Texture texture = LoadTexture("resources/player.png"); // Failed
+        Texture texture1 = LoadTexture("player.png"); // Failed
+
         SetTargetFPS(60);
         //--------------------------------------------------------------------------------------
 
