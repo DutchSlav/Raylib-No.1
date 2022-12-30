@@ -7,16 +7,13 @@ import static com.raylib.Jaylib.*;
 
 public class Main {
     public static void main(String[] args) {
-        Main main = new Main();
-    }
-    public Main() {
         // Initialization
         //--------------------------------------------------------------------------------------
         final int screenWidth = 800;
         final int screenHeight = 450;
         Raylib.Vector2 ballPosition = new Jaylib.Vector2();
 
-        InitWindow(screenWidth, screenHeight, "Raylib Testing Engine");
+        InitWindow(screenWidth, screenHeight, "raylib [core] example - 2d camera mouse zoom");
 
         Raylib.Camera2D camera = new Raylib.Camera2D();
         camera.zoom(2.0f);
@@ -77,10 +74,10 @@ public class Main {
             rlPushMatrix();
             rlTranslatef(0, 25*50, 0);
             rlRotatef(90, 1, 0, 0);
-            DrawGrid(1000, 100);
+            DrawGrid(100, 50);
             rlPopMatrix();
 
-            DrawCircleV(ballPosition, 10, WHITE);
+            DrawCircleV(ballPosition, 20, YELLOW);
 
             EndMode2D();
 
